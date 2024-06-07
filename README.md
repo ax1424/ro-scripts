@@ -1,2 +1,2 @@
 # ro-scripts
-my custom bash scripts that use rofi
+my custom shell scripts that use rofi
