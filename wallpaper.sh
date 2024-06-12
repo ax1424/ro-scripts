@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Directory containing wallpapers
 WALLPAPER_DIR="/home/aston/wallpapers"
