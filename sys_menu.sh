@@ -9,7 +9,8 @@ chosen=$(echo -e "$options" | rofi -dmenu -i -p "System Menu:")
 # Execute the selected option
 case "$chosen" in
     Logout)
-        echo "awesome.quit()" | awesome-client
+        #echo "awesome.quit()" | awesome-client
+        qtile cmd-obj -o cmd -f shutdown
         ;;
     Shutdown)
         systemctl poweroff
