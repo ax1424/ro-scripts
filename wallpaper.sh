@@ -15,7 +15,7 @@ select_wallpaper() {
     options="Random\nSet\nExit"
 
     # Show the menu using Rofi
-    chosen=$(echo -e "$options" | rofi -dmenu -i -p "Select Wallpaper:")
+    chosen=$(echo -e "$options" | dmenu -i -p "Select Wallpaper:")
 
     # Check if the chosen option is not empty
     if [ -z "$chosen" ]; then
@@ -48,7 +48,7 @@ select_random_wallpaper() {
         #nitrogen --restore
 
         # Ask for confirmation
-        confirmation=$(echo -e "Yes\nNo" | rofi -dmenu -i -p "Are you satisfied with this wallpaper?")
+        confirmation=$(echo -e "Yes\nNo" | dmenu -i -p "Are you satisfied with this wallpaper?")
 
         if [[ "$confirmation" == "Yes" ]]; then
             echo "Wallpaper set successfully."

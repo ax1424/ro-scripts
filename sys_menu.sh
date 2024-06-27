@@ -4,7 +4,7 @@
 options="Logout\nShutdown\nReboot\nExit"
 
 # Show the menu using Rofi
-chosen=$(echo -e "$options" | rofi -dmenu -i -p "System Menu:")
+chosen=$(echo -e "$options" | dmenu -i -p "System Menu:")
 
 # Execute the selected option
 case "$chosen" in
